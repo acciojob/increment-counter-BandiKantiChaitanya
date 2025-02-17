@@ -2,10 +2,10 @@
 let counter = document.getElementById('counter');
 let incrementBtn = document.getElementById('incrementBtn');
 // let body=document.getElementByTag('body')
-function increment() {
+incrementBtn.addEventListener('click',function() {
     let currentCount = parseInt(counter.innerText);
+    alert(`${counter.innerText}`)
     counter.innerText = currentCount + 1;
-    displayCount.innerText = `Current count: ${counter.innerText}`;
-}
+})
 
-incrementBtn.addEventListener('click', increment);
+
